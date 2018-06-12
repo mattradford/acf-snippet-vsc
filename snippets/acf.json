@@ -11,7 +11,7 @@
 	},
 	"field": {
 		"prefix": "field",
-		"body": "<?php if ( get_field('${1:field_name}') ) : ?>\r\n\t<?php echo get_field('${1:field_name}'); ?>\r\n<?php endif; ?>\r\n",
+		"body": "<?php if ( get_field('${1:field_name}') ) : ?>\r\n\t<?php echo esc_html( get_field('${1:field_name}')); ?>\r\n<?php endif; ?>\r\n",
 		"description": "Display ACF field"
 	},
 	"field:file:id": {
